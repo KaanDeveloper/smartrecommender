@@ -1,8 +1,8 @@
 //html
-var footerContainer = document.querySelector(".footer__container")
+var footerContainer = document.querySelector(".footer-bottom")
 var sliderBox = document.createElement("div")
 sliderBox.classList.add("slider-box")
-footerContainer.insertBefore(sliderBox, document.querySelector(".footer-bottom"))
+footerContainer.insertBefore(sliderBox, document.querySelector(".footer-bottom-icons-country"))
 
 var heading = document.createElement("h3")
 heading.textContent = "YOU MIGHT ALSO LIKE"
@@ -64,7 +64,7 @@ sliderProducts.style.justifyContent = "space-between"
 sliderProducts.style.overflow = "hidden"
 
 //js
-const url = "https://insider-optimus.herokuapp.com/smart-recommender"
+var url = "https://opt-interview-projects.onrender.com/smart-recommender"
 
 //Calling API
 fetch(url)
